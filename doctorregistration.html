@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration</title>
+    <link rel="stylesheet" href="doctorregistration.css">
+</head>
+<body>
+
+    <div class="registration-container">
+        <h2>Doctor Registration</h2>
+        <form action="doctor_register_process.php" method="POST" enctype="multipart/form-data">
+            <label for="doctor_name">Doctor Name:</label>
+            <input type="text" id="doctor_name" name="doctor_name" required>
+
+            <label for="mobile">Mobile No:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required placeholder="Enter 10-digit mobile number">
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="clinic_address">Clinic Address:</label>
+            <textarea id="clinic_address" name="clinic_address" required></textarea>
+
+            <label for="nmr_id">NMR ID:</label>
+            <input type="text" id="nmr_id" name="nmr_id" required>
+
+            <label for="certificate">Upload Certificate:</label>
+            <input type="file" id="certificate" name="certificate" accept=".pdf,.jpg,.png" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>

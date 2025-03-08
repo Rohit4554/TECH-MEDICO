@@ -1,0 +1,63 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Set the background image to fit the entire screen */
+body {
+    background: url('HomeBackground.png') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the full page */
+}
+
+/* Logo container for absolute positioning */
+.logo-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Logos positioning */
+.logo {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    display: inline-block;
+}
+
+/* Style for the text below each logo */
+.logo-text {
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+
+.doctor {
+    bottom: 230px;;
+    left: 900px;
+}
+
+.patient {
+    bottom: 200px;
+    right:190px ;
+}
+
+.admin {
+    
+    bottom:50px;
+    right:190px;
+}
+
+/* Move the Chemist Logo to the Bottom Right */
+.chemist {
+    bottom: 50px;
+    left: 900px;
+}
