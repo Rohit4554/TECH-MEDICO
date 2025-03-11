@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemist Registration</title>
+    <link rel="stylesheet" href="chemistregistration.css">
+</head>
+<body>
+
+    <div class="registration-container">
+        <h3>Chemist Registration</h3>
+        <form action="chemist_registration_process.php" method="POST" enctype="multipart/form-data">
+            <label for="chemist_name">Chemist Name:</label>
+            <input type="text" id="chemist_name" name="chemist_name" required>
+
+            <label for="mobile">Mobile No:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required placeholder="Enter 10-digit mobile number">
+            
+            <label for="email">E-mail ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="clinic_address">Clinic Address:</label>
+            <textarea id="clinic_address" name="clinic_address" required></textarea>
+
+            <label for="pharmacists_id">Pharmacist's ID:</label>
+            <input type="text" id="pharmacists_id" name="pharmacists_id" required>
+
+            <label for="certificate">Upload Certificate:</label>
+            <input type="file" id="certificate" name="certificate" accept=".pdf,.jpg,.png" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Login option should appear below -->
+        <p>Already have an account? <a href="chemistlogin.html">Log in</a></p>
+    </div>
+
+</body>
+</html>
