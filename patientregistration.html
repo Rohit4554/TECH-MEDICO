@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration</title>
+    <link rel="stylesheet" href="patientregistration.css">
+</head>
+<body>
+
+    <div class="registration-container">
+        <h3>Patient Registration</h3>
+        <form action="patient_registration_process.php" method="POST" enctype="multipart/form-data">
+            <label for="patient_name">Patient Name:</label>
+            <input type="text" id="patient_name" name="patient_name" required>
+
+            <label for="mobile">Mobile No:</label>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required placeholder="Enter 10-digit mobile number">
+            
+            <label for="patient_address">Patient Address</label>
+            <textarea id="patient_address" name="patient_address" required></textarea>
+
+           
+            <button type="submit">Register</button>
+        </form>
+        <p>I have an account? <a href="patientlogin.html">log in</a></p>
+    </div>
+</body>
+<html>
